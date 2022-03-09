@@ -1,0 +1,32 @@
+useDynLib("GeneralizedUmatrix", .registration = TRUE)
+importFrom(Rcpp, evalCpp)
+
+exportPattern("^[[:alpha:]]+")
+
+export(GeneralizedUmatrix)
+export(plotTopographicMap)
+export(XYcoords2LinesColumns)
+export(upscaleUmatrix)
+export(NormalizeUmatrix)
+export(GeneratePmatrix)
+export(CalcUstarmatrix)
+export(TopviewTopographicMap)
+export(ExtendToroidalUmatrix)
+export(UniqueBestMatchingUnits)
+export(LowLand)
+export(ReduceToLowLand)
+export(Uheights4Data)
+
+#Island generation now in ProjectionBasedClustering package
+
+import(ggplot2)
+import(shiny)
+import(shinyjs)
+import(png)
+import(tcltk)
+
+
+importFrom("grDevices", "dev.off", "png", "contourLines", "col2rgb", "colorRamp")
+importFrom("graphics", "lines", "par", "rasterImage")
+importFrom("stats", "median", "qnorm", "sd", "quantile", "runif", "dist","cmdscale")
+
